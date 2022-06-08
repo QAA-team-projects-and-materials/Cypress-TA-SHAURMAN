@@ -1,4 +1,4 @@
-import selectors from "../../support/selectors";
+import {HomePage} from "../../constants/selectors/selectors";
 
 describe("Test cases for Home page", function (){
     beforeEach(() => {
@@ -6,27 +6,26 @@ describe("Test cases for Home page", function (){
     })
 
     it('Verify displaying header', function () {
-        expect('HEADER').to.exist
+        expect(HomePage.header).to.exist
     });
 
     it('Verify displaying top-bar menu', function () {
-        expect('TOP_BAR_MENU').to.exist
+        expect(HomePage.topBarMenu).to.exist
     });
 
     it('Verify displaying sidebar', function () {
-        expect('SIDEBAR').to.exist
+        expect(HomePage.sidebar).to.exist
     });
 
     it('Verify displaying slider', function () {
-        expect('SLIDER').to.exist
+        expect(HomePage.slider).to.exist
     });
 
     it('Verify displaying main content block', function () {
-        expect('MAIN_CONTENT').to.exist
+        expect(HomePage.mainContent).to.exist
     });
 
     it('Verify displaying footer', function () {
-        expect('FOOTER').to.exist
+        expect(HomePage.footer).to.exist
     });
-
 })
